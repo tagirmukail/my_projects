@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body background="{% static "img/greenabs.jpg" %}">
+  <section id="header">
+    <div class="top container">
+      <a href="{% url "vision:BlogList" %}">EASY VISION</a>
+    </div>
+  </section>
+  <section class="container">
+    <a class="btn" href="{% url "vision:LoginFormView" %}">Вход</a>
+    <a class="btn" href="{% url "vision:RegisterFormView" %}">Регистрация</a>
+    <a class="btn" href="{% url "vision:LogoutView" %}">Выход</a>
+    {% if user %}
+    <h2 class="btn-light">{{ user }}</h2>
+    {% else %}
+    <h2 class="btn-light">Гость</h2>
+    {% endif %}
+    <form class="top-bl" action="{% url "vision:search" %}" method="GET">
+      <input type="text" name="q" />
+      <button class="btn" type="submit">search</button>
+    </form>
+  </section>
+  <section id="content row" class="container">
+    {% block content %}{% endblock %}
+  </section>
+  <a  class="btn1" href="{% url "vision:ContactView" %}">Обратная связь</a>
+&copy; 2017 Mukailov T.G. [<a class="btn" href="https://mukailov1991@mail.ru">Mukailov T.G.</a>]
+</body>
+</html>
