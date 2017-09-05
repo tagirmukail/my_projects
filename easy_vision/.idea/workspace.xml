@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54184c5c-33f4-4e25-b005-2508a70d49f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/blogs/2017/07/18/Hydrangeas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/blogs/2017/07/18/Jellyfish.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/blogs/2017/07/19/Koala.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/blogs/2017/08/01/d182d0b8d0b3d180-3.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vis.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vision/static/img/greenabs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/gal.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/media/products/2017/07/01/d182d0b8d0b3d180-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/media/products/2017/07/01/focus.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../python" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../python3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../python3.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/bin.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../activate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../activate.csh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../activate.fish" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../activate_this.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../createfontdatachunk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../django-admin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../django-admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../easy_install" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../easy_install-3.5" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/easy_vision.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/easy_vision/__init__.py" />
@@ -56,83 +33,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vision/tests.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vision/urls.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vision/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../enhancer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../explode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/.idea/galbal.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/migrations/0002_auto_20170721_1521.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/templates/ballon/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/templates/ballon/gallon/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/templates/ballon/gallon/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/ballon/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/galbal/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/galbal/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/galbal/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/galbal/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../galbal/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../gifmaker.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/.idea/myshop.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/cart.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/templates/cart/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/cart/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/myshop/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/myshop/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/myshop/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/myshop/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/templates/shop/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/templates/shop/product/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/templates/shop/product/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../myshop/shop/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../painter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pilconvert.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pildriver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pilfile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pilfont.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pilprint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pip3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pip3.5" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../player.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../python-config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../thresholder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../viewer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../wheel" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/form.py" afterPath="$PROJECT_DIR$/vision/form.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/templates/vision/outcal/call.html" afterPath="$PROJECT_DIR$/vision/templates/vision/outcal/call.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/templates/vision/outcal/tanks.html" afterPath="$PROJECT_DIR$/vision/templates/vision/outcal/tanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/templates/vision/registration/login.html" afterPath="$PROJECT_DIR$/vision/templates/vision/registration/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/templates/vision/registration/register.html" afterPath="$PROJECT_DIR$/vision/templates/vision/registration/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vision/urls.py" afterPath="$PROJECT_DIR$/vision/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../galbal/ballon/urls.py" afterPath="$PROJECT_DIR$/../galbal/ballon/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -146,7 +54,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vision/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="1314">
               <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -159,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/vision/form.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,8 +76,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vision/templates/vision/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <state relative-caret-position="108">
+              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -188,7 +96,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/easy_vision/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
+            <state relative-caret-position="2412">
               <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <marker date="1503910030000" expanded="true" signature="884:1085" ph="..." />
@@ -255,6 +163,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="tagirmukail" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -327,25 +240,12 @@
               <item name="easy_vision" type="462c0819:PsiDirectoryNode" />
               <item name="vision" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="easy_vision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_vision" type="462c0819:PsiDirectoryNode" />
-              <item name="vision" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy_vision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy_vision" type="462c0819:PsiDirectoryNode" />
-              <item name="vision" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,6 +353,14 @@
       <option name="presentableId" value="Default" />
       <updated>1500353024727</updated>
     </task>
+    <task id="LOCAL-00001" summary="обновлен контент">
+      <created>1504638472184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504638472184</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -466,18 +374,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="-4" width="1323" height="772" extended-state="6" />
+    <frame x="515" y="-4" width="1325" height="780" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13469069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13703994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23387097" sideWeight="0.5226537" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924694" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27216175" sideWeight="0.47734627" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27216175" sideWeight="0.47734627" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -491,18 +399,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="обновлен контент" />
+    <option name="LAST_COMMIT_MESSAGE" value="обновлен контент" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vision/templates/vision/blogs/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -737,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/easy_vision/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
+        <state relative-caret-position="2412">
           <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <marker date="1503910030000" expanded="true" signature="884:1085" ph="..." />
@@ -755,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vision/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="1314">
           <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -774,22 +679,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vision/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.idea/bin.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vision/templates/vision/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        <state relative-caret-position="108">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
