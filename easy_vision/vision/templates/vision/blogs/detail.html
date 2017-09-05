@@ -1,0 +1,38 @@
+{% extends "vision/base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+  {{ blog.name }}
+{% endblock %}
+
+{% block content %}
+  <div class="product-detail">
+    <div class="col-sm-4">
+      <img src="{% if blog.image %}{{ blog.image.url }}{% else %}{% static "img/no-image.jpg"%}{% endif %}" class="img-responsive">
+    </div>
+    <div class="col-sm-8">
+      <h1>{{ blog.name }}</h1>
+      <h2><a href="{{ blog.category.get_absolute_url }}">{{ blog.category }}</a></h2>
+      <p>
+        <iframe width="550" height="400"
+                 src="{{ blog.videourl }}"
+                 frameborder="4"
+                 allowfullscreen>
+
+        </iframe>
+      </p>
+      <div class="col-sm-6">
+        <p align="left"> {{ blog.description | linebreaks}} </p>
+      </div>
+      <div class="col-sm-8">
+        {% if user %}
+          gud
+        {% else %}
+          bad
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
