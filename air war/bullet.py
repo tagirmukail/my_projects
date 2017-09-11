@@ -7,12 +7,16 @@ class Bullet(Sprite):
         """создает обьект пули в текущей позиции корабля."""
         super().__init__()
         self.screen = screen
+        # загрузка изображения снаряда
+        self.image = pygame.image.load('images/bulet.bmp')
+        self.rect = self.image.get_rect()
+        self.screen_rect = screen.get_rect()
 
         # создание пули в позиции(0,0) и назначение правильной позиции.
-        self.rect = pygame.Rect(0, 0, ai_settings.bullet_width,
-                                ai_settings.bullet_height)
-        self.rect.centerx = gun.rect.centerx
-        self.rect.top = gun.rect.top
+        # self.rect = pygame.Rect(0, 0, ai_settings.bullet_width,
+        #                        ai_settings.bullet_height)
+        self.rect.right = gun.rect.right
+        self.rect.center = gun.rect.center
 
         # позиция пули храниться в вещественном формате
         self.x = float(self.rect.x)
@@ -28,4 +32,4 @@ class Bullet(Sprite):
 
     def draw_bullet(self):
         """вывод пули на экран"""
-        pygame.draw.rect(self.screen, self.color, self.rect)
+        self.screen.blit(self.image, self.rect)

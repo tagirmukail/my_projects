@@ -15,8 +15,13 @@ def run_game():
     # создание gun
     gun = Gun(ai_settings, screen)
 
+    # создание Ufo
+    ufos = Group()
+
     # создание пуль
     bullets = Group()
+
+    gf.create_fleet(ai_settings, screen, gun, ufos)
 
     # запуск осонвного цикла
     while True:
@@ -24,6 +29,6 @@ def run_game():
         gf.check_events(ai_settings, screen, gun, bullets)
         gun.update()
         gf.update_bullets(bullets)
-        gf.update_screen(ai_settings, screen, gun, bullets)
+        gf.update_screen(ai_settings, screen, gun, ufos, bullets)
 
 run_game()
