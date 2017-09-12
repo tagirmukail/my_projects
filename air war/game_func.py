@@ -60,14 +60,24 @@ def update_screen(ai_settings, screen, gun, ufos, bullets):
     # отображение последнего прорисованного экрана
     pygame.display.flip()
 
-def update_bullets(bullets):
-    """обновление позиции пуль и уничтожает старые пули"""
+def update_bullets(ai_settings, screen, gun, ufos, bullets):
+    """обновление позиции снарядов и уничтожает старые снаряды"""
     bullets.update()
 
-    # Удаление пуль, вышедших за экран
+    # Удаление снарядов, вышедших за экран
     for bullet in bullets.copy():
         if bullet.rect.left >= 800:
             bullets.remove(bullet)
+    check_bullet_ufo_collisions(ai_settings, screen, gun, ufos, bullets)
+
+def check_bullet_ufo_collisions(ai_settings, screen, gun, ufos, bullets):
+    """Обработка коллизий снарядов с пришельцами."""
+    # Удаление снарядов и пришельцев, участвующих в коллизиях.
+    collisions = pygame.sprite.groupcollide(bullets, ufos, True, True)
+    if len(ufos) == 0:
+        # уничтожение всех снарядов и создание нового флота.
+        bullets.empty()
+        create_fleet(ai_settings, screen, gun, ufos)
 
 def fire_bullet(ai_settings, screen, gun, bullets):
     if len(bullets) < ai_settings.bullet_allowed:
@@ -84,7 +94,7 @@ def create_ufo(ai_settings, screen, ufos, ufo_number, row_number):
     """создает пришельца и размещает его в ряду"""
     ufo = Ufo(ai_settings, screen)
     ufo_height = ufo.rect.height
-    ufo.y = 2 * ufo_height * ufo_number
+    ufo.y = ufo_height * ufo_number
     ufo.rect.y = ufo.y
     ufo.rect.x =ai_settings.screen_width - (ufo.rect.width + 2 * ufo.rect.width * row_number)
     ufos.add(ufo)
@@ -106,3 +116,26 @@ def get_number_rows(ai_settings, gun_width, ufo_width):
     available_space_x = (ai_settings.screen_width - (3 * ufo_width) - gun_width)
     number_rows = int(available_space_x / (2 * ufo_width))
     return number_rows
+
+def check_fleet_edges(ai_settings, ufos):
+    """Реагирует на достижение пришельцем края экрана."""
+    for ufo in ufos.sprites():
+        if ufo.check_edges():
+            change_fleet_direction(ai_settings, ufos)
+            break
+
+def change_fleet_direction(ai_settings, ufos):
+    """Двигает влево весь флот и меняет направление флота."""
+    for ufo in ufos.sprites():
+        ufo.rect.x -= ai_settings.fleet_drop_speed
+    ai_settings.fleet_direction *= -1
+
+def update_ufos(ai_settings, gun, ufos):
+    """Проверяет достиг ли флот края экрана,
+     после чего обновляет позиции всех пришельцев во флоте"""
+    check_fleet_edges(ai_settings, ufos)
+    ufos.update()
+
+    # проверка коллизий "пришелец - самолет".
+    if pygame.sprite.spritecollideany(gun, ufos):
+        print("Air hit!!!")

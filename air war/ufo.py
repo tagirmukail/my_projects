@@ -24,3 +24,16 @@ class Ufo(Sprite):
     def blitme(self):
         """ Вывод пришельца в текущем положении"""
         self.screen.blit(self.image, self.rect)
+
+    def check_edges(self):
+        """Возвращвет True, если пришелец достиг края экрана"""
+        screen_rect = self.screen.get_rect()
+        if self.rect.centery <= screen_rect.top:
+            return True
+        elif self.rect.centery >= screen_rect.bottom:
+            return True
+
+    def update(self):
+        """Перемещает пришельца вверх и вниз"""
+        self.y += (self.ai_settings.ufo_speed_factor * self.ai_settings.fleet_direction)
+        self.rect.y = self.y

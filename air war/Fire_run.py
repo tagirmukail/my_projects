@@ -23,12 +23,13 @@ def run_game():
 
     gf.create_fleet(ai_settings, screen, gun, ufos)
 
-    # запуск осонвного цикла
+    # запуск основного цикла
     while True:
         # отслеживание событий с клавиатуры
         gf.check_events(ai_settings, screen, gun, bullets)
         gun.update()
-        gf.update_bullets(bullets)
+        gf.update_bullets(ai_settings, screen, gun, ufos, bullets)
+        gf.update_ufos(ai_settings, gun, ufos)
         gf.update_screen(ai_settings, screen, gun, ufos, bullets)
 
 run_game()
