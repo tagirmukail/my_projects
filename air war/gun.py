@@ -43,3 +43,8 @@ class Gun():
     def blitme(self):
         """рисует gun в текущей позиции"""
         self.screen.blit(self.image, self.rect)
+
+    def center_left(self):
+        """Размещает самолет в центре левого края экрана."""
+        self.centerX = self.screen_rect.left
+        self.centerY = self.screen_rect.centery

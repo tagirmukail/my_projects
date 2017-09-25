@@ -4,6 +4,7 @@ import pygame
 from bullet import Bullet
 from gun import Gun
 from ufo import Ufo
+from time import sleep
 
 def check_keydown_events(event, ai_settings, screen, gun, bullets):
     """реагирует на нажатия клавиш"""
@@ -130,7 +131,7 @@ def change_fleet_direction(ai_settings, ufos):
         ufo.rect.x -= ai_settings.fleet_drop_speed
     ai_settings.fleet_direction *= -1
 
-def update_ufos(ai_settings, gun, ufos):
+def update_ufos(ai_settings, stats, screen, gun, ufos, bullets):
     """Проверяет достиг ли флот края экрана,
      после чего обновляет позиции всех пришельцев во флоте"""
     check_fleet_edges(ai_settings, ufos)
@@ -138,4 +139,35 @@ def update_ufos(ai_settings, gun, ufos):
 
     # проверка коллизий "пришелец - самолет".
     if pygame.sprite.spritecollideany(gun, ufos):
-        print("Air hit!!!")
+        gun_hit(ai_settings, stats, screen, gun, ufos, bullets)
+
+    # проверка нло, добравщихся до левого края экрана.
+    check_ufos_bottom(ai_settings, stats, screen, gun, ufos, bullets)
+
+def gun_hit(ai_settings, stats, screen, gun, ufos, bullets):
+    """Обрабатывает столкновения самолета с прищельцами."""
+    if stats.gun_limit_life > 0:
+        # Уменьшение жизней
+        stats.gun_limit_life -= 1
+
+        # очистка списка ufo and bullets
+        ufos.empty()
+        bullets.empty()
+
+        # создание нового флота нло и размещение самолета в начальной позиции.
+        create_fleet(ai_settings, screen, gun, ufos)
+        gun.center_left()
+
+        # пауза
+        sleep(0.5)
+    else:
+        stats.game_active = False
+
+def check_ufos_bottom(ai_settings, stats, screen, gun, ufos, bullets):
+    """Проверяет, достиг ли корабль нло левого края экрана."""
+    screen_rect = screen.get_rect()
+    for ufo in ufos.sprites():
+        if ufo.rect.left <= screen_rect.left:
+            # происходит то же, что и при столкновении с самолетом.
+            gun_hit(ai_settings, stats, screen, gun, ufos, bullets)
+            break
