@@ -6,7 +6,8 @@ from gun import Gun
 from ufo import Ufo
 from time import sleep
 
-def check_keydown_events(event, ai_settings, screen, gun, bullets):
+def check_keydown_events(event, ai_settings, screen, stats, gun,
+                         ufos, bullets):
     """реагирует на нажатия клавиш"""
     if event.key == pygame.K_RIGHT:
         # переместить gun вправо
@@ -25,6 +26,8 @@ def check_keydown_events(event, ai_settings, screen, gun, bullets):
         fire_bullet(ai_settings, screen, gun, bullets)
     elif event.key == pygame.K_ESCAPE:
         sys.exit()
+    elif event.key == pygame.K_p:
+        start_game(ai_settings, screen, stats, gun, ufos, bullets)
 
 def check_keyup_events(event, gun):
     """Реагирует на отпускания клавиш"""
@@ -37,18 +40,48 @@ def check_keyup_events(event, gun):
     if event.key == pygame.K_DOWN:
         gun.moving_down = False
 
-def check_events(ai_settings, screen, gun, bullets):
+def check_events(ai_settings, screen, stats,
+                 play_button, gun, ufos, bullets):
     """обрабатывает нажатия клавиш и события мыши"""
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
 
         elif event.type == pygame.KEYDOWN:
-            check_keydown_events(event, ai_settings, screen, gun,bullets)
+            check_keydown_events(event, ai_settings, screen, stats, gun, ufos, bullets)
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, gun)
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            check_play_button(ai_settings, screen, stats,
+                              play_button, gun, ufos, bullets,
+                              mouse_x, mouse_y)
 
-def update_screen(ai_settings, screen, gun, ufos, bullets):
+def check_play_button(ai_settings, screen, stats, play_button,
+                      gun, ufos, bullets, mouse_x, mouse_y):
+    """Запускает новую игру при нажатии кнопки Play."""
+    button_click = play_button.rect.collidepoint(mouse_x, mouse_y)
+    if button_click and not stats.game_active:
+        start_game(ai_settings, screen, stats, gun, ufos, bullets)
+
+def start_game(ai_settings, screen, stats, gun, ufos, bullets):
+    """Запускает новую игру."""
+    # Указатель мыши скрывается.
+    pygame.mouse.set_visible(False)
+    # Сброс игровой статистики.
+    stats.status_reset()
+    stats.game_active = True
+
+    # Очистка списков нло и пуль
+    ufos.empty()
+    bullets.empty()
+
+    # создание нового флота и размещение самолета в центре.
+    create_fleet(ai_settings, screen, gun, ufos)
+    gun.center_left()
+
+def update_screen(ai_settings, screen, stats,
+                  gun, ufos, bullets, play_button):
     """обновляет изображение на экране и отображает новый экран"""
     # при каждом проходе цикла перерисовывается экран.
     screen.fill(ai_settings.bg_color)
@@ -58,6 +91,9 @@ def update_screen(ai_settings, screen, gun, ufos, bullets):
 
     gun.blitme()
     ufos.draw(screen)
+    # кнопка Play отображается только в том случае, если не активна игра
+    if not stats.game_active:
+        play_button.draw_button()
     # отображение последнего прорисованного экрана
     pygame.display.flip()
 
@@ -162,6 +198,7 @@ def gun_hit(ai_settings, stats, screen, gun, ufos, bullets):
         sleep(0.5)
     else:
         stats.game_active = False
+        pygame.mouse.set_visible(True)
 
 def check_ufos_bottom(ai_settings, stats, screen, gun, ufos, bullets):
     """Проверяет, достиг ли корабль нло левого края экрана."""

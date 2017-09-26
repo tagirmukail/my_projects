@@ -3,18 +3,18 @@ import pygame
 class Gun():
 
     def __init__(self, ai_settings, screen):
-        """инициализация самолета, задание его начальной позиции"""
+        """инициализация оружияи задание его начальной позиции"""
         self.screen = screen
         self.ai_settings = ai_settings
 
-        #загрузка изображения самолета
+        #загрузка изображения gun
         self.image = pygame.image.load('images/gun.bmp')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
-        # каждый новый  самолет появляется в центре
+        # каждый новый  gun появляется в центре
         self.rect.centerx = self.screen_rect.left
         self.rect.centery = self.screen_rect.centery
-        # сохранение вещественной координаты центра самолета
+        # сохранение вещественной координаты центра gun
         self.centerX = float(self.rect.centerx)
         self.centerY = float(self.rect.centery)
         # флаг перемещения
@@ -24,7 +24,7 @@ class Gun():
         self.moving_down = False
 
     def update(self):
-        """обновляет позицию самолета с учетом флага"""
+        """обновляет позицию gun с учетом флага"""
         if self.moving_right and self.rect.right < self.screen_rect.right:
             self.centerX += self.ai_settings.gun_speed
 
@@ -41,7 +41,7 @@ class Gun():
         self.rect.centery = self.centerY
 
     def blitme(self):
-        """рисует самолет в текущей позиции"""
+        """рисует gun в текущей позиции"""
         self.screen.blit(self.image, self.rect)
 
     def center_left(self):
