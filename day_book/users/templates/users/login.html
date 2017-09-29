@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'journal/base.html' %}
+{% load bootstrap3 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day Book</title>
+</head>
+<body>
+{% block header %}
+    <h2>
+        Выполните вход в свой профиль!
+    </h2>
+{% endblock header %}
+
+{% block content %}
+    {% if form.errors %}
+    <p>Данные не корректны, проверьте логин или пароль и попробуйте еще раз.</p>
+    {% endif %}
+
+    <form action="{% url 'users:login' %}" method="post" class="form">
+        {% csrf_token %}
+
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button name="submit" class="btn btn-primary">Войти</button>
+        {% endbuttons %}
+        <input type="hidden" name="next" value="{% url 'journal:index' %}"/>
+    </form>
+{% endblock content %}
+</body>
+</html>

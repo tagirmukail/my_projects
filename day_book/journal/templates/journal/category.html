@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends 'journal/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day Book</title>
+</head>
+<body>
+{% block header %}
+    <h2>{{ category }}</h2>
+{% endblock header %}
+
+{% block content %}
+
+<p>
+    <a href="{% url 'journal:new_entry' category.id %}">Добавить новую запись</a>
+</p>
+<hr>
+<ul>
+    {% for entry in entries %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>
+                    {{ entry.name|upper }}
+                </h3>
+                <h4>
+                <small>
+                        <a href="{% url 'journal:edit_entry' entry.id %}">
+                            Редактировать запись
+                        </a>
+                </small>
+                 </h4>
+                <h4>
+                    Дата публикации: -- {{ entry.date_added|date:'d M, Y H:i' }} ------
+                </h4>
+            </div>
+            <div class="panel-body">
+               {{ entry.description|linebreaks }}
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+    {% empty %}
+        <li>
+            Здесь пока нет записей для этой темы!
+        </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+</body>
+</html>

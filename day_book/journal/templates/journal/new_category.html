@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'journal/base.html' %}
+{% load bootstrap3 %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day Book</title>
+</head>
+<body>
+{% block header %}
+    <h2>Добавить новую тему:</h2>
+{% endblock header %}
+{% block content %}
+
+    <form action="{% url 'journal:new_category' %}" class="form" method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+
+        {% buttons %}
+        <button name="submit" class="btn btn-primary">Добавить тему</button>
+        {% endbuttons %}
+    </form>
+{% endblock content %}
+</body>
+</html>

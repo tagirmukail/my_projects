@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'journal/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day_book</title>
+</head>
+<body>
+{% block header %}
+    <div class="jumbotron">
+        <h1>
+            Твой онлайн дневник!
+        </h1>
+    </div>
+{% endblock header %}
+{% block content %}
+<h2>
+    <a href="{% url 'users:register' %}">Зарегистрируйте акаунт</a>
+    для ведения личного дневника.
+</h2>
+<h2>И когда у Вас что-то происходит, создайте новую тему, и добавьте запись о событии!</h2>
+{% endblock content %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'journal/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day Book</title>
+</head>
+<body>
+{% block header %}
+    <h2>Темы</h2>
+{% endblock header %}
+{% block content %}
+
+<ul>
+    {% for category in categories %}
+    <li>
+        <h3>
+            <a href="{% url 'journal:category' category.id %}">{{ category }}</a>
+        </h3>
+    </li>
+    {% empty %}
+    <li>Нет тем, добавьте новую.</li>
+    {% endfor %}
+</ul>
+<h3>
+    <a href="{% url 'journal:new_category' %}">Добавить новую категорию</a>
+</h3>
+{% endblock content %}
+</body>
+</html>
