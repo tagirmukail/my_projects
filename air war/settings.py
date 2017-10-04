@@ -1,5 +1,5 @@
 class Settings():
-    """настройки игры"""
+    """Статические настройки игры"""
 
     def __init__(self):
         # парамтры экрана
@@ -19,5 +19,23 @@ class Settings():
         # настройки пришельцев
         self.ufo_speed_factor = 0.7
         self.fleet_drop_speed = 10
+        # Темп ускорения игры.
+        self.speedup = 1.1
+        self.dynamic_settings()
         # fleet_direction = 1 обозначает движение вверх; а -1 вниз
         self.fleet_direction = 1
+
+    def dynamic_settings(self):
+        """Инициализирует настройки, изменяющиеся в ходе игры."""
+        self.gun_speed = 1.5
+        self.bullet_speed = 2
+        self.ufo_speed_factor = 1
+
+        # движение в право или в лево.
+        self.fleet_direction = 1
+
+    def up_speed(self):
+        """Увеличение скорости."""
+        self.gun_speed += self.speedup
+        self.bullet_speed += self.speedup
+        self.ufo_speed_factor += self.speedup

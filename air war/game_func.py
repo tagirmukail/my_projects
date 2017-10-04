@@ -62,6 +62,8 @@ def check_play_button(ai_settings, screen, stats, play_button,
     """Запускает новую игру при нажатии кнопки Play."""
     button_click = play_button.rect.collidepoint(mouse_x, mouse_y)
     if button_click and not stats.game_active:
+        # сброс игровых настроек.
+        ai_settings.dynamic_settings()
         start_game(ai_settings, screen, stats, gun, ufos, bullets)
 
 def start_game(ai_settings, screen, stats, gun, ufos, bullets):
@@ -112,8 +114,9 @@ def check_bullet_ufo_collisions(ai_settings, screen, gun, ufos, bullets):
     # Удаление снарядов и пришельцев, участвующих в коллизиях.
     collisions = pygame.sprite.groupcollide(bullets, ufos, True, True)
     if len(ufos) == 0:
-        # уничтожение всех снарядов и создание нового флота.
+        # уничтожение всех снарядов, увеличение скорости и создание нового флота.
         bullets.empty()
+        ai_settings.up_speed()
         create_fleet(ai_settings, screen, gun, ufos)
 
 def fire_bullet(ai_settings, screen, gun, bullets):
