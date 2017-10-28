@@ -1,0 +1,38 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Geomap</title>
+</head>
+    <h1>Карта мира</h1>
+
+    <img  src="{% static "tiles/0/0/0.png" %}"/>
+</body>
+
+</html>
+-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="height: calc(100vh - 15px)"></div>
+    <script>
+        var map = L.map('map').setView([0, 0], 0);
+
+        L.tileLayer('static/tiles/{z}/{y}/{x}.png', {
+        minZoom: 0,
+        maxZoom: 0,
+        attribution: '',
+        tms: false
+        }).addTo(map);
+    </script>
+</body>
+</html>
